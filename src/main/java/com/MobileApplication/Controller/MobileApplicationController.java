@@ -33,17 +33,17 @@ public class MobileApplicationController {
 	{
 		 return mp.getAllName();
 	}
-	@GetMapping (value="/getBet")
+	@GetMapping (value="/getInvalue")
 	public List<MobileApplication> getIn()
 	{
 		 return (List<MobileApplication>) mp.getIn();
 	}
-	@GetMapping (value="/getNames/{a}")
+	@GetMapping (value="/name/{a}")
 	public List<MobileApplication> getNames(@PathVariable String a)
 	{
 		 return (List<MobileApplication>) mp.getNames(a);
 	}
-	@GetMapping(value="/getFee/{a}/{b}")
+	@GetMapping(value="/fees/{a}/{b}")
 	public List<MobileApplication> getFee(@PathVariable int a,@PathVariable int b)
 	{
 		 return (List<MobileApplication>) mp.getFee(a,b);
